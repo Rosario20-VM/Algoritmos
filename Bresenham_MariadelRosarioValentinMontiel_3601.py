@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-def DDA(x1,y1,x2,y2,color):
+def Bresenham(x1,y1,x2,y2,color):
     dx= abs(x2-x1)
     dy= abs(y2-y1)
     p = 2*dy - dx
@@ -27,7 +27,7 @@ def main():
     y2=int(input("Ingresa y2: "))
     color="r."
 
-    DDA(x1,y1, x2, y2,color)
+    Bresenham(x1,y1, x2, y2,color)
 
 if __name__ == '__main__':
     main()
